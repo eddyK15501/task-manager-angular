@@ -5,6 +5,12 @@
     background-color: #f4f4f4;
 }
 
+.task-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .task h3 {
     display: flex;
     justify-content: space-between;

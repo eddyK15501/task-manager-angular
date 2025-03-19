@@ -1,4 +1,9 @@
 <div class="task">
-    <h3>{{ task.text }}</h3>
-    <p>{{ task.day }}</p>
+  <div class="task-box">
+    <div>
+      <h3>{{ task.text }}</h3>
+      <p>{{ task.day }}</p>
+    </div>
+    <fa-icon [icon]="faTimes" [ngStyle]="{ color: 'dodgerblue' }"></fa-icon>
+  </div>
 </div>
