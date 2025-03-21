@@ -12,14 +12,20 @@ import { TaskService } from '../../services/task.service';
   styleUrl: './tasks.component.css',
 })
 export class TasksComponent implements OnInit {
-  tasks$: Task[] = [];
+  tasks: Task[] = [];
 
   constructor(private taskService: TaskService) {}
 
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((data) => {
-      this.tasks$ = data;
-      console.log(data)
-    })
+      this.tasks = data;
+      console.log(data);
+    });
+  }
+
+  handleDeleteTask(task: Task) {
+    this.taskService.deleteTask(task).subscribe((data) => {
+      this.tasks = this.tasks.filter((t) => t.id !== data.id);
+    });
   }
 }
