@@ -1,9 +1,17 @@
-<div class="task">
+<div
+  class="task"
+  [ngClass]="{ reminder: task.reminder }"
+  (dblclick)="remindTask(task)"
+>
   <div class="task-box">
     <div>
       <h3>{{ task.text }}</h3>
       <p>{{ task.day }}</p>
     </div>
-    <fa-icon (click)="deleteTask(task)" [icon]="faTimes" [ngStyle]="{ color: 'dodgerblue' }"></fa-icon>
+    <fa-icon
+      (click)="deleteTask(task)"
+      [icon]="faTimes"
+      [ngStyle]="{ color: 'dodgerblue' }"
+    ></fa-icon>
   </div>
 </div>

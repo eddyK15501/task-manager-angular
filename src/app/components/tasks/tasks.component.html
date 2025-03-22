@@ -1,1 +1,6 @@
-<app-task-box *ngFor="let task of tasks" [task]="task" (onDeleteTask)="handleDeleteTask(task)"></app-task-box>
+<app-task-box
+  *ngFor="let task of tasks"
+  [task]="task"
+  (onDeleteTask)="handleDeleteTask(task)"
+  (onDblClick)="handleRemindTask(task)"
+></app-task-box>
