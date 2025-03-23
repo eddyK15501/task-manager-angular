@@ -24,13 +24,13 @@ export class TasksComponent implements OnInit {
   }
 
   handleDeleteTask(task: Task) {
-    this.taskService.deleteTask(task).subscribe((data) => {
+    this.taskService.dbDeleteTask(task).subscribe((data) => {
       this.tasks = this.tasks.filter((t) => t.id !== data.id);
     });
   }
 
   handleRemindTask(task: Task) { 
     task.reminder = !task.reminder;
-    // console.log(task.reminder);
+    this.taskService.dbRemindTask(task).subscribe();
   }
 }

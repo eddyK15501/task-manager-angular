@@ -4,13 +4,13 @@
       "id": "1",
       "text": "AI Conference",
       "day": "March 18th at 10:00am",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": "5",
       "text": "Car Wash",
       "day": "April 1st at 3:00pm",
-      "reminder": false
+      "reminder": true
     }
   ]
 }
