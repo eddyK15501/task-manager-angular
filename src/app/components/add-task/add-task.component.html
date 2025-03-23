@@ -1,1 +1,27 @@
-<p>add-task works!</p>
+<form class="add-form">
+  <div class="form-control">
+    <label for="add-text">Task</label>
+    <input
+      type="text"
+      id="add-text"
+      name="add-task-text"
+      placeholder="Add Task"
+    />
+  </div>
+  <div class="form-control">
+    <label for="add-date">Date</label>
+    <input
+      type="text"
+      id="add-date"
+      name="add-task-date"
+      placeholder="Add Date"
+    />
+  </div>
+  <div class="form-control form-control-check">
+    <label for="add-reminder">Set Reminder</label>
+    <div class="form-checkbox">
+      <input type="checkbox" id="add-reminder" name="add-task-reminder" />
+    </div>
+  </div>
+  <button class="btn btn-block" type="submit">Save Task</button>
+</form>
