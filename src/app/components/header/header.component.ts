@@ -10,7 +10,7 @@ import { ButtonComponent } from '../button/button.component';
 export class HeaderComponent {
   heading: string = 'Task Manager';
 
-  toggleAddTask() {
-    console.log('toggle')
+  addTask() {
+    console.log('task added.')
   }
 }

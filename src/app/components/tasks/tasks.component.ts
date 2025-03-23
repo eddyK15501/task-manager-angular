@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { TaskBoxComponent } from '../task-box/task-box.component';
+import { AddTaskComponent } from '../add-task/add-task.component';
 import { Task } from '../../tasks';
 import { TaskService } from '../../services/task.service';
 
 @Component({
   selector: 'app-tasks',
   standalone: true,
-  imports: [NgFor, TaskBoxComponent],
+  imports: [NgFor, TaskBoxComponent, AddTaskComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css',
 })
