@@ -6,6 +6,7 @@
       id="add-text"
       name="add-task-text"
       placeholder="Add Task"
+      [(ngModel)]="text"
     />
   </div>
   <div class="form-control">
@@ -15,12 +16,18 @@
       id="add-date"
       name="add-task-date"
       placeholder="Add Date"
+      [(ngModel)]="date"
     />
   </div>
   <div class="form-control form-control-check">
     <label for="add-reminder">Set Reminder</label>
     <div class="form-checkbox">
-      <input type="checkbox" id="add-reminder" name="add-task-reminder" />
+      <input
+        type="checkbox"
+        id="add-reminder"
+        name="add-task-reminder"
+        [(ngModel)]="reminder"
+      />
     </div>
   </div>
   <button class="btn btn-block" type="submit">Save Task</button>
