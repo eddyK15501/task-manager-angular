@@ -1,4 +1,4 @@
-<form class="add-form">
+<form class="add-form" (ngSubmit)="onFormSubmit()">
   <div class="form-control">
     <label for="add-text">Task</label>
     <input
@@ -10,13 +10,13 @@
     />
   </div>
   <div class="form-control">
-    <label for="add-date">Date</label>
+    <label for="add-day">Date</label>
     <input
       type="text"
-      id="add-date"
-      name="add-task-date"
+      id="add-day"
+      name="add-task-day"
       placeholder="Add Date"
-      [(ngModel)]="date"
+      [(ngModel)]="day"
     />
   </div>
   <div class="form-control form-control-check">
