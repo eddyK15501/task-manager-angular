@@ -17,7 +17,7 @@ export class TaskService {
 
   constructor(private http: HttpClient) {}
 
-  getTasks(): Observable<Task[]> {
+  dbGetTasks(): Observable<Task[]> {
     const data = this.http.get<Task[]>(this.apiUrl);
     return data;
   }
@@ -30,7 +30,11 @@ export class TaskService {
   dbRemindTask(task: Task): Observable<Task> {
     const url = `${this.apiUrl}/${task.id}`;
     const response = this.http.put<Task>(url, task, httpHeading);
-    
+
     return response;
+  }
+
+  dbAddTask(task: Task): Observable<Task> {
+    return this.http.post<Task>(this.apiUrl, task, httpHeading);
   }
 }

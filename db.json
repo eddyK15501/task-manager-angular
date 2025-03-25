@@ -11,6 +11,18 @@
       "text": "Car Wash",
       "day": "April 1st at 3:00pm",
       "reminder": false
+    },
+    {
+      "id": "38b1",
+      "text": "Earnings Report",
+      "day": "March 25th at 4:00pm",
+      "reminder": true
+    },
+    {
+      "id": "0d00",
+      "text": "Mar 28th Expiry, 30 Call",
+      "day": "March 25th at 3:50pm",
+      "reminder": true
     }
   ]
 }

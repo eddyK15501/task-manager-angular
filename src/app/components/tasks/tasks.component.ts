@@ -18,7 +18,7 @@ export class TasksComponent implements OnInit {
   constructor(private taskService: TaskService) {}
 
   ngOnInit(): void {
-    this.taskService.getTasks().subscribe((data) => {
+    this.taskService.dbGetTasks().subscribe((data) => {
       this.tasks = data;
       // console.log(data);
     });
@@ -30,12 +30,14 @@ export class TasksComponent implements OnInit {
     });
   }
 
-  handleRemindTask(task: Task) { 
+  handleRemindTask(task: Task) {
     task.reminder = !task.reminder;
     this.taskService.dbRemindTask(task).subscribe();
   }
 
   handleAddTask(task: Task) {
-    console.log(task);
+    this.taskService.dbAddTask(task).subscribe((data) => {
+      this.tasks.push(data);
+    });
   }
 }
