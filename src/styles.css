@@ -93,6 +93,20 @@ body {
   height: 20px;
 }
 
+.about-container {
+  margin-top: 5rem;
+}
+
+.about-container a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+.about-container a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 #add-reminder {
   width: 18px;
   height: 18px;
