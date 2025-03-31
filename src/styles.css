@@ -10,6 +10,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.about-container {
+  margin-top: 3rem;
+}
+
 .add-form {
   margin-bottom: 40px;
 }
@@ -20,7 +29,7 @@ body {
   overflow: auto;
   min-height: 300px;
   border: 1px solid rgb(68, 158, 255);
-  padding: 30px;
+  padding: 30px 30px 20px;
   border-radius: 5px;
 }
 
@@ -93,16 +102,12 @@ body {
   height: 20px;
 }
 
-.about-container {
-  margin-top: 5rem;
-}
-
-.about-container a {
+.route-link {
   text-decoration: none;
   color: dodgerblue;
 }
 
-.about-container a:hover {
+.route-link:hover {
   opacity: 0.8;
   text-decoration: underline;
 }
